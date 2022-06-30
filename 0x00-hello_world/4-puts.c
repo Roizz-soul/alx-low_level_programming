@@ -2,13 +2,11 @@
 #include <string.h>
 
 /**
- *
  * main - Entry point
  *
  * Description: Using puts to display an output
  *
  * Return: Always 0 (Success)
- *
  */
 
 int main(void)
