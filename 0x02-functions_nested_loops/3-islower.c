@@ -4,7 +4,7 @@
 
 /**
  * _islower - check code
- *@c - character to be checked
+ *@c: character to be checked
  *
  * Return: Also check code
  */
