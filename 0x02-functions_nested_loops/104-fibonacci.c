@@ -12,8 +12,7 @@ int main(void)
 	unsigned long f1 = 0, f2 = 1, sum;
 	unsigned long g, b, c, d, e, f;
 
-	for (a = 0; a < 92; a++)
-		
+	for (a = 0; a < 92; a++)	
 	{
 		sum = f1 + f2;
 		printf("%lu", sum);
