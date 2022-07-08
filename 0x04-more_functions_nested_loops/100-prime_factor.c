@@ -9,7 +9,7 @@ int main(void)
 {
 	long pnum = 612852475143, i;
 
-	while (i < (pnum % 2) == 0)
+	while (i < (pnum / 2))
 	{
 		if ((pnum % 2) == 0)
 		{
