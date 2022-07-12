@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
 * _putchar - Entry point, performs the same function as putchar
