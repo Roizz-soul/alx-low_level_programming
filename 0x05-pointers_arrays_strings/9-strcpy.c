@@ -9,6 +9,7 @@
 
 char *_strcpy(char *dest, char *src)
 {
+	const *src
 	int index = 0;
 
 	while (src[index])
