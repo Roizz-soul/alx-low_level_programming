@@ -7,12 +7,19 @@
 
 void print_rev(char *s)
 {
-	int len = 0, index;
+	if(!s || _strlen(s) < 2)
+		_putchar(s);
 
-	while (s[index++])
-		len++;
-	for (index = len - 1; index >= 0; index--)
-		_putchar(s[index]);
+	int end = _strlen(s)-1;
+	int start = 0;
 
+	while( start < end )
+	{
+		s[start] ^= s[end];
+		s[end] ^= s[start];
+		s[start++]^= s[end--];
+	}
+
+	_putchar(s);
 	_putchar('\n');
 }
