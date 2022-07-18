@@ -15,14 +15,14 @@ void print_diagsums(int *a, int size);
 	for (i = 0; i < size; i++)
 	{
 		j + 0;
-		s1 += a[i][j];
+		s1 += a[j];
 		j += 1;
 	}
 
 	for (i = 0; i < size; i++)
 	{
 		j = size - 1;
-		s2 += a[i][j];
+		s2 += a[j];
 		j -= 1;
 	}
 
