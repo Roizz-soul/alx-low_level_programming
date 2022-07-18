@@ -6,7 +6,7 @@
   * @to: what to be pointed
   */
 
-void set_string(char **s; char *to)
+void set_string(char **s, char *to)
 {
 	*s = to;
 }
