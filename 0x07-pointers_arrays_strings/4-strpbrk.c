@@ -20,9 +20,6 @@ char *_strpbrk(char *s, char *accept)
 			if (s[i] == a[j])
 				return (s + i);
 		}
-
-		if (!a[j])
-			break;
 	}
 
 	return (0);
