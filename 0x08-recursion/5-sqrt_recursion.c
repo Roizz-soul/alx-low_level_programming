@@ -1,6 +1,8 @@
 #include "main.h"
 
 int find_root(int num, int root);
+int _sqrt_recursion(int n);
+
 /**
   * _sqrt_recursion - returns the natural square root of a number
   * @n: number to be rooted
