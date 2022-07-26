@@ -21,7 +21,7 @@ char **strtow(char *str)
 	for (k = 0; k < 1; k++)
 		array[k] = str[k];
 	i = k;
-	for (k = 0; k < j; K++)
+	for (k = 0; k < j; k++)
 	{
 		array[i] = str[k];
 		i++;
