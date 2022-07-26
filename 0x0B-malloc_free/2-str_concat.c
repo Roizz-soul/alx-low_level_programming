@@ -37,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 	for (l = 0; s1[l] != '\0'; l++)
 		strsum[l] = s1[l];
 
-	if (s2 != NULL)
+	if (s2 == NULL)
 		s2 = "";
 
 	for (m = 0; s2[m] != '\0'; m++)
