@@ -34,11 +34,21 @@ char *str_concat(char *s1, char *s2)
 	if (strsum == NULL)
 		return (NULL);
 
-	for (l = 0; s1[l] != '\0'; l++)
-		strsum[l] = s1[l];
+	if (s1 == NULL)
+		l = -1;
+	else
+	{
+		for (l = 0; s1[l] != '\0'; l++)
+			strsum[l] = s1[l];
+	}
 
-	for (m = 0; s2[m] != '\0'; m++)
-		strsum[l++] = s2[m];
+	if (s2 == NULL)
+		return (strsum);
+	else
+	{
+		for (m = 0; s2[m] != '\0'; m++)
+			strsum[l++] = s2[m];
+	}
 
 	return (strsum);
 	free(strsum);
