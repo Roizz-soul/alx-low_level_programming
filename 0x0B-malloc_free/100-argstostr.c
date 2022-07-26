@@ -8,7 +8,7 @@
   * Return: check code
   */
 
-char *argstostar(int ac, char **av)
+char *argstostr(int ac, char **av)
 {
 	char *str;
 	int i, j, k = 0;
