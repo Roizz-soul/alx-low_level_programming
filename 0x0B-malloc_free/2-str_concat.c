@@ -11,7 +11,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *strsum;
-	unsigned int i, j, k, l, m, n;
+	unsigned int i, j, k, l, m;
 
 	for (i = 0; s1[i] != '\0'; i++)
 		;
