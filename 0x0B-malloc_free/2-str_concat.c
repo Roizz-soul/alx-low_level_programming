@@ -20,8 +20,12 @@ char *str_concat(char *s1, char *s2)
 
 	if (i > 0)
 		i = i + 1;
+	else
+		i = 0;
 	if (j > 0)
 		j = j + 1;
+	else
+		j = 0;
 
 	k = i + j;
 
@@ -32,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 
 	for (l = 0; s1[l] != '\0'; l++)
 		strsum[l] = s1[l];
-	for (m = l + 1, n = 0; s2[n] != '\0'; m++, n++)
+	for (m = (l + 1), n = 0; s2[n] != '\0'; m++, n++)
 		strsum[m] = s2[n];
 
 	return (strsum);
