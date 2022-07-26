@@ -20,7 +20,9 @@ char *create_array(unsigned int size, char c)
 	if (array == NULL)
 		return (NULL);
 
-	int i = 0;
+	int i;
+
+	i = 0;
 
 	while (array[i])
 	{
