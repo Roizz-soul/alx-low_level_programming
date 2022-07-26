@@ -3,8 +3,8 @@
 
 /**
   * free_grid - frees 2 D grid created earlier
-  * grid: grid to be freed
-  * height: height of grid
+  * @grid: grid to be freed
+  * @height: height of grid
   */
 
 void free_grid(int **grid, int height)
