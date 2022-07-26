@@ -25,7 +25,8 @@ char *str_concat(char *s1, char *s2)
 
 	k = i + j;
 
-	strsum = malloc(sizeof(char) * k);
+
+	strsum = malloc(sizeof(char) * (k + 2));
 
 	if (strsum == NULL)
 		return (NULL);
