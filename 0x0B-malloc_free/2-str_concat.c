@@ -27,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 	else
 		j = 0;
 
-	k = i + j;
+	k = i + j - 1;
 
 	strsum = malloc(sizeof(char) * k);
 
@@ -36,8 +36,14 @@ char *str_concat(char *s1, char *s2)
 
 	for (l = 0; s1[l] != '\0'; l++)
 		strsum[l] = s1[l];
-	for (m = (l + 1), n = 0; s2[n] != '\0'; m++, n++)
+
+	n = 0;
+
+	for (m = l + 1; s2[n] != '\0'; m++)
+	{
 		strsum[m] = s2[n];
+		n++;
+	}
 
 	return (strsum);
 	free(strsum);
