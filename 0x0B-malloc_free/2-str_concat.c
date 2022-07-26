@@ -13,25 +13,17 @@ char *str_concat(char *s1, char *s2)
 	char *strsum;
 	unsigned int i, j, k, l, m;
 
-	for (i = 0; s1[i] != '\0'; i++)
-		;
-	for (j = 0; s2[j] != '\0'; j++)
-		;
-	if (i > 0)
-		i = i + 1;
-	else if (s1 == NULL)
-	{
+	if (s1 == NULL)
 		s1 = "";
-		i = 0;
-	}
-	if (j > 0)
-		j = j + 1;
-	else if (s2 == NULL)
-	{
+	if (s2 == NULL)
 		s2 = "";
-		j = 0;
-	}
-	k = i + j - 1;
+
+	for (i = 0; s1[i]; i++)
+		;
+	for (j = 0; s2[j]; j++)
+		;
+
+	k = i + j;
 
 	strsum = malloc(sizeof(char) * k);
 
