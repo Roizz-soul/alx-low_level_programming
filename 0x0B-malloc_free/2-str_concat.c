@@ -20,11 +20,11 @@ char *str_concat(char *s1, char *s2)
 
 	if (i > 0)
 		i = i + 1;
-	else
+	else if (s1 == NULL)
 		i = 0;
 	if (j > 0)
 		j = j + 1;
-	else
+	else if (s2 == NULL)
 		j = 0;
 
 	k = i + j - 1;
@@ -39,11 +39,8 @@ char *str_concat(char *s1, char *s2)
 
 	n = 0;
 
-	for (m = l + 1; s2[n] != '\0'; m++)
-	{
-		strsum[m] = s2[n];
-		n++;
-	}
+	for (m = 0; s2[m] != '\0'; m++)
+		strsum[l++] = s2[m];
 
 	return (strsum);
 	free(strsum);
