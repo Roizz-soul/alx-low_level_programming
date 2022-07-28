@@ -9,6 +9,8 @@
   */
 int main(int argc, char **argv)
 {
+	int i, j;
+
 	if (argc != 3)
 	{
 		printf("%s\n", "Error");
