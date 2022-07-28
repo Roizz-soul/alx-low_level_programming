@@ -12,14 +12,16 @@
 char *string_nconcat(char *s1, char s2, unsigned int n)
 {
 	char *sum;
-	int i, j, k;
+	int i, j, k = n;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+	for (i = 0; s[i]; i++)
+		k++;
 
-	sum = malloc(sizeof(s1) + (sizeof(char) * n));
+	sum = malloc(sizeof(char) * (k + 1));
 
 	if (sum == NULL)
 		return (NULL);
