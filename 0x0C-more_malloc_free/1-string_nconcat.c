@@ -9,16 +9,16 @@
   * Return: check code
   */
 
-char *string_nconcat(char *s1, char s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *sum;
-	int i, j, k = n;
+	unsigned int i, j, k = n;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (i = 0; s[i]; i++)
+	for (i = 0; s1[i]; i++)
 		k++;
 
 	sum = malloc(sizeof(char) * (k + 1));
