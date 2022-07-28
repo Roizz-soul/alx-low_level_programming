@@ -12,7 +12,7 @@
 char *string_nconcat(char *s1, char s2, unsigned int n)
 {
 	char *sum;
-	int i, j, k = 0;
+	int i, j, k;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -20,6 +20,10 @@ char *string_nconcat(char *s1, char s2, unsigned int n)
 		s2 = "";
 
 	sum = malloc(sizeof(s1) + (sizeof(char) * n));
+
+	if (sum == NULL)
+		return (NULL);
+	k = 0;
 
 	for (i = 0; s1[i]; i++)
 		sum[k++] = s1[i];
