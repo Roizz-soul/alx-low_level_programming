@@ -5,13 +5,22 @@
   * @array: array to search
   * @size: number of elements in the array
   * @cmp: pointer to function used to compare values
+  * Return: Check code
   */
 int int_index(int *array, int size, int (*cmp)(int))
 {
+	int i;
+
 	if (size <= 0)
 		return (-1);
-	if (cmp == NULL)
+	if (cmp == NULL || array == NULL)
 		return (-1);
-	else
 
+	for (i = 0; i < size; i++)
+	{
+		if (cmp(array[i]) != 0)
+			return (i);
+	}
+
+	return (-1);
 }
