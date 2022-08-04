@@ -10,12 +10,11 @@ void print_all(const char * const format, ...)
 {
 	int i = 0, j;
 	char *str;
-
 	va_list ap;
 
 	va_start(ap, format);
 
-	while (format && format != NULL)
+	while (format && format[i] != '\0')
 	{
 		j = 1;
 		switch (format[i])
