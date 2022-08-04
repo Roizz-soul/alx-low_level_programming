@@ -8,10 +8,12 @@
   */
 void print_all(const char * const format, ...)
 {
-	int 1 = 0, j;
+	int i = 0, j;
 	char *str;
 
-	va_list(ap, format);
+	va_list ap;
+
+	va_start(ap, format);
 
 	while (format && format != NULL)
 	{
@@ -44,6 +46,6 @@ void print_all(const char * const format, ...)
 			printf(", ");
 		i++;
 	}
-	prinf("\n");
+	printf("\n");
 	va_end(ap);
 }
