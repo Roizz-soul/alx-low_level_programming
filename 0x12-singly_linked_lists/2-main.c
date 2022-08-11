@@ -10,8 +10,8 @@ int main(void)
 	list_t *head;
 
 	head = NULL;
-	add_node(&head, "Alexandro");
-	add_node(&head, "Asaia");
+	add_node_end(&head, "Alexandro");
+	add_node_end(&head, "Asaia");
 	print_list(head);
 
 	return (0);
