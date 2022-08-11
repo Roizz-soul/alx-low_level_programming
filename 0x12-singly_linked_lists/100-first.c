@@ -1,10 +1,13 @@
-#include "lists.h"
+#include <stdio.h>
+
+void __attribute__((constructor)) hare(void);
+
 /**
- * print_before_main - prints message before execute main
- * Return: void
+ * hare - Prints a string before the
+ *        main function is executed.
  */
-void print_before_main(void)
+void hare(void)
 {
-	printf("You're beat! and yet, you must allow,\n");
-	printf("I bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n"
+	       "I bore my house upon my back!\n");
 }
