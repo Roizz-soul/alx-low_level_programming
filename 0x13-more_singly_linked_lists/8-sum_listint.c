@@ -13,7 +13,7 @@ int sum_listint(listint_t *head)
 		return (0);
 	while (temp->next != NULL)
 	{
-		sum += temp->n
+		sum += temp->n;
 		temp = temp->next;
 	}
 	sum += temp->next;
