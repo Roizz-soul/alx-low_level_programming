@@ -6,8 +6,6 @@
   */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int n = 1, i, ans = 0;
-
 	unsigned int num = 0, mult = 1;
 	int len;
 
