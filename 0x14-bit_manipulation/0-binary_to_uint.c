@@ -1,25 +1,23 @@
 #include "main.h"
 /**
-  * binary_to_unit - converts binary to unsigned integer
+  * binary_to_uint - converts binary to unsigned integer
   * @b: binary to be converted
   * Return: converted number or 0 if binary is invalid
   */
-unsigned int binary_to_int(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
-	unsigned int n, i, ans;
-	char *s;
+	unsigned int n = 1, i, ans = 0;
 
 	if (b == NULL)
 		return (0);
-	s = strrev(b);
-	i = 0, ans = 0, n = 0;
-	while (s[i] != '\0')
+	for (i = 0; b[i]; i++)
+		;
+	for (i -= 1; i > 0; i--)
 	{
-		if (s[i] == 1 || s[i] == 0)
+		if (b[i] == '1' || b[i] == '0')
 		{
-			ans += s[i] * pow(2, n);
-			n++;
-			i++;
+			ans += (b[i] - '0') * n;
+			n *= 2;
 		}
 		else
 			return (0);
